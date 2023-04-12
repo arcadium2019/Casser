@@ -34,10 +34,9 @@
             this.lblTournoi = new System.Windows.Forms.Label();
             this.rdo1vs1 = new System.Windows.Forms.RadioButton();
             this.rdoTournoi = new System.Windows.Forms.RadioButton();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pnlTournoi = new System.Windows.Forms.Panel();
             this.pnl1vs1 = new System.Windows.Forms.Panel();
-            this.lbl = new System.Windows.Forms.Label();
+            this.lblDef = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitre
@@ -49,7 +48,6 @@
             this.lblTitre.Size = new System.Drawing.Size(307, 51);
             this.lblTitre.TabIndex = 0;
             this.lblTitre.Text = "PUISSANCE 4";
-            this.lblTitre.Click += new System.EventHandler(this.lblTitre_Click);
             // 
             // btnParametres
             // 
@@ -121,22 +119,22 @@
             this.pnl1vs1.Size = new System.Drawing.Size(220, 143);
             this.pnl1vs1.TabIndex = 7;
             // 
-            // lbl
+            // lblDef
             // 
-            this.lbl.AutoSize = true;
-            this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.lbl.Location = new System.Drawing.Point(232, 98);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(327, 37);
-            this.lbl.TabIndex = 8;
-            this.lbl.Text = "Choix du mode de jeu";
+            this.lblDef.AutoSize = true;
+            this.lblDef.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.lblDef.Location = new System.Drawing.Point(232, 98);
+            this.lblDef.Name = "lblDef";
+            this.lblDef.Size = new System.Drawing.Size(327, 37);
+            this.lblDef.TabIndex = 8;
+            this.lblDef.Text = "Choix du mode de jeu";
             // 
             // FormLancement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(791, 497);
-            this.Controls.Add(this.lbl);
+            this.Controls.Add(this.lblDef);
             this.Controls.Add(this.rdoTournoi);
             this.Controls.Add(this.rdo1vs1);
             this.Controls.Add(this.lblTournoi);
@@ -147,7 +145,6 @@
             this.Controls.Add(this.pnl1vs1);
             this.Name = "FormLancement";
             this.Text = "Puissance 4";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,15 +153,18 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitre;
-        private System.Windows.Forms.Button btnParametres;
         private System.Windows.Forms.Label lbl1vs1;
         private System.Windows.Forms.Label lblTournoi;
+        private System.Windows.Forms.Label lblDef;
+
+        private System.Windows.Forms.Button btnParametres;
+
         private System.Windows.Forms.RadioButton rdo1vs1;
         private System.Windows.Forms.RadioButton rdoTournoi;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+
         private System.Windows.Forms.Panel pnlTournoi;
         private System.Windows.Forms.Panel pnl1vs1;
-        private System.Windows.Forms.Label lbl;
+
     }
 }
 
